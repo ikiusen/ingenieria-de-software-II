@@ -73,7 +73,7 @@ TEST_CASE("Correct translation into Spanish. Another string 2", "[LanguageManage
     string translation = lm->translate("HELLO_NADA");
         
     // Assert
-    REQUIRE( translation == "¡Hola Nada!" );
+    REQUIRE( translation == "NULL TRANSLATION OF KEY: HELLO_NADA!" );
 }
 
 TEST_CASE( "Correct translation into English", "[LanguageManager getTranslation]" )
